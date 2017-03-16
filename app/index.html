@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roulette dApps</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Roulette</h1>
+  <h2> Contract <span id="contractaddress"></span></h2>
+  
+  <p>Bank address <span class="black"><span id="bankaddress"></span></p>
+  <p>Current bank balance <span class="black"><span id="bankbalance"></span></p>
+  <p>There are <span class="black"><span id="totalbets"></span> bets for a total amount of <span id="totalbetsamount"></span> Ether</span></p>
+
+  <br>
+  <h1>Bet</h1>
+  <br><label for="numberToBet">Number:</label><input type="text" id="numberToBet" placeholder="0..35"></input>
+  <br><label for="amountToBet">Amount:</label><input type="text" id="amountToBet" placeholder="e.g., 1"></input>
+  <br><br><button id="send" onclick="doBet()">Bet</button>
+  <br><br>
+  <span id="status"></span>
+</body>
+</html>
