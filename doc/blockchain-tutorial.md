@@ -10,6 +10,7 @@ Installing `blockchain-turorial` is done via `git clone`:
 
 ```sh
 $ git clone git@gitlab.in2p3.fr:lodygens/blockchain-tutorial.git
+$ cd blockchain-tutorial
 ```
 
 # Docker
@@ -69,6 +70,6 @@ $ docker run -ti zenika/truffle-with-testrpc sh
 
 ```sh
 $ cd
-$ git clone git@gitlab.in2p3.fr:lodygens/blockchain-tutorial.git
+$ git clone https://github.com/lodygens/blockchain-tutorial.git
 ```
 
