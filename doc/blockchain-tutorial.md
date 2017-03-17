@@ -103,9 +103,9 @@ undefined
 > var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 undefined
 > web3.eth.accounts
-[ '0xed1165286ad96f4d05bba688370896389d703439',
-  '0xd81cf4ae3ddd9cf58e46fa8930ccbe2f2e7298ee' ]
-> web3.fromWei(web3.eth.getBalance('0xed1165286ad96f4d05bba688370896389d703439'), 'ether')
+[ '0xdd37d6074a0a12f432b31406ec67c9f8b49e64aa',
+  '0x4811600e7d149b77929f0afeb6ea389ff7a56203' ]
+> web3.fromWei(web3.eth.getBalance('0xdd37d6074a0a12f432b31406ec67c9f8b49e64aa'), 'ether')
 { [String: '10000'] s: 1, e: 4, c: [ 10000 ] }
 ```
 
