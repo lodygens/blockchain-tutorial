@@ -2,7 +2,7 @@ pragma solidity ^0.4.2;
 
 /**
  * This contract describes a roulette wheel
- * This is my first Smart Contract, just to see how it works
+ * See https://www.ethereum-france.com/ecrire-une-dapp-pour-ethereum-1-smart-contract/
  * @author Oleg Lodygensky (oleg.lodygensky@lal.in2p3.fr)
  */
 contract Roulette {
