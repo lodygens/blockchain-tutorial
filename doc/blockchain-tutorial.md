@@ -69,10 +69,10 @@ $ docker run -ti zenika/truffle-with-testrpc sh
 * Inside the running container, start testrpc by executing:
 
 ```sh
-$# cd
-$# git clone https://github.com/lodygens/blockchain-tutorial.git
-$# cd blockchain-tutorial
-$# ./testrpc.sh
+$> cd
+$> git clone https://github.com/lodygens/blockchain-tutorial.git
+$> cd blockchain-tutorial
+$> ./testrpc.sh
 ```
 
 ## Test the network
@@ -82,8 +82,8 @@ $# ./testrpc.sh
 ```sh
 $ docker ps
 $ docker exec -it [your-container-id] sh
-$# npm install web3
-$# node
+$> npm install web3
+$> node
 > var Web3 = require('web3');
 undefined
 > var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
@@ -101,10 +101,10 @@ undefined
 ```sh
 $ docker ps
 $ docker exec -it [your-container-id] sh
-$# cd /root/blockchain-tutorial
-$# truffle compile
-$# truffle build
-## truffle migrate
+$> cd /root/blockchain-tutorial
+$> truffle compile
+$> truffle build
+$> truffle migrate
 Running migration: 1_initial_migration.js
   Deploying Migrations...
 Saving successful migration to network...
@@ -114,7 +114,7 @@ Running migration: 2_deploy_roulette.js
 Saving successful migration to network...
 Saving artifacts...
 
-# truffle serve
+$> truffle serve
 Serving app on port 8080...
 Rebuilding...
 Completed without errors on Fri Jan 13 2017 16:34:41 GMT+0100 (CET)
@@ -126,8 +126,8 @@ Completed without errors on Fri Jan 13 2017 16:34:41 GMT+0100 (CET)
 ```sh
 $ docker ps
 $ docker exec -it [your-container-id] sh
-$# cd /root/blockchain-tutorial
-$# truffle console
+$> cd /root/blockchain-tutorial
+$> truffle console
 truffle(default)> var contractFromRouletteDeployed = Roulette.deployed();
 undefined
 truffle(default)> contractFromRouletteDeployed.betSingle(5,{ from: web3.eth.accounts[0], value: 4});
