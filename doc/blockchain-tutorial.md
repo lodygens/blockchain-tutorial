@@ -66,10 +66,31 @@ $ docker pull zenika/truffle-with-testrpc
 $ docker run -ti zenika/truffle-with-testrpc sh
 ```
 
-* Inside the running container, execute:
+* Inside the running container, start testrpc by executing:
 
 ```sh
 $ cd
 $ git clone https://github.com/lodygens/blockchain-tutorial.git
+$ cd blockchain-tutorial
+$ ./testrpc.sh
 ```
 
+## Test the network
+ * Open a new terminal and connect to your container by executing:
+
+```sh
+$ docker ps
+$ docker exec -it [your-container-id] sh
+$ npm install web3
+$ node
+> > var Web3 = require('web3');
+undefined
+> var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+undefined
+> web3.eth.accounts
+[ '0xed1165286ad96f4d05bba688370896389d703439',
+  '0xd81cf4ae3ddd9cf58e46fa8930ccbe2f2e7298ee' ]
+> web3.fromWei(web3.eth.getBalance('0xed1165286ad96f4d05bba688370896389d703439'), 'ether')
+{ [String: '10000'] s: 1, e: 4, c: [ 10000 ] }
+
+```
