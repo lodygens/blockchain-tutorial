@@ -101,10 +101,10 @@ undefined
 ```sh
 $ docker ps
 $ docker exec -it [your-container-id] sh
-# cd /root/blockchain-tutorial
-# truffle compile
-# truffle build
-# truffle migrate
+$# cd /root/blockchain-tutorial
+$# truffle compile
+$# truffle build
+## truffle migrate
 Running migration: 1_initial_migration.js
   Deploying Migrations...
 Saving successful migration to network...
