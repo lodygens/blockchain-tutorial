@@ -145,6 +145,8 @@ truffle(default)> contractFromRouletteDeployed.betSingle(5,{ from: web3.eth.acco
 truffle(default)> contractFromRouletteDeployed.getBetsCountAndValue.call();
 [ { [String: '3'] s: 1, e: 0, c: [ 3 ] },
   { [String: '12'] s: 1, e: 1, c: [ 12 ] } ]
-
 ```
+
+We can see that calling the transaction betSingle() modified the contract as expected; this is shown by calling method `getBetsCountAndValue()`
+
 
