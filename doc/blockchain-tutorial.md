@@ -126,8 +126,8 @@ Completed without errors on Fri Jan 13 2017 16:34:41 GMT+0100 (CET)
 ```sh
 $ docker ps
 $ docker exec -it [your-container-id] sh
-\# cd /root/blockchain-tutorial
-\# truffle console
+$# cd /root/blockchain-tutorial
+$# truffle console
 truffle(default)> var contractFromRouletteDeployed = Roulette.deployed();
 undefined
 truffle(default)> contractFromRouletteDeployed.betSingle(5,{ from: web3.eth.accounts[0], value: 4});
