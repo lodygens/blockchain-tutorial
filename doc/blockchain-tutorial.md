@@ -147,6 +147,6 @@ truffle(default)> contractFromRouletteDeployed.getBetsCountAndValue.call();
   { [String: '12'] s: 1, e: 1, c: [ 12 ] } ]
 ```
 
-We can see that calling the transaction betSingle() modified the contract as expected; this is shown by calling method `getBetsCountAndValue()`
+We can see that calling the transaction `betSingle()` modified the contract as expected; this is shown by calling method `getBetsCountAndValue()`
 
 
