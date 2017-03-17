@@ -73,6 +73,20 @@ $> cd
 $> git clone https://github.com/lodygens/blockchain-tutorial.git
 $> cd blockchain-tutorial
 $> ./testrpc.sh
+EthereumJS TestRPC v3.0.0
+
+Available Accounts
+==================
+(0) 0xdd37d6074a0a12f432b31406ec67c9f8b49e64aa
+(1) 0x4811600e7d149b77929f0afeb6ea389ff7a56203
+
+Private Keys
+==================
+(0) 0ed9bf56a8d15fb710225749ba83e1e91a90f3b7319277688d9155f96a488a39
+(1) 3fb61fb0fa1974f591df36887750ee84474f7bfeb28e39802246b8245660e1f5
+
+Listening on localhost:8545
+
 ```
 
 ## Test the network
